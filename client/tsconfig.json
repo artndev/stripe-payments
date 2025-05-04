@@ -17,5 +17,6 @@
     "noUncheckedIndexedAccess": true,
     "jsx": "react-jsx"
   },
-  "exclude": ["dist", "node_modules"]
+  "exclude": ["dist", "node_modules"],
+  "files": ["./node_modules/redux-persist/types/storage/index.d.ts"]
 }

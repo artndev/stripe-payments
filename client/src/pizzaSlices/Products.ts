@@ -18,9 +18,12 @@ export const productSlice = createSlice({
     addProduct: (state, action) => {
       state.products = [...state.products, action.payload]
     },
+    removeProduct: state => {
+      state.products.pop()
+    },
   },
 })
 
-export const { addProduct } = productSlice.actions
+export const { addProduct, removeProduct } = productSlice.actions
 
 export default productSlice.reducer
