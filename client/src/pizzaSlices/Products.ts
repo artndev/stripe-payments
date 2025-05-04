@@ -3,10 +3,9 @@ import { createSlice } from '@reduxjs/toolkit'
 const initialState = {
   products: [
     {
-      brand: 'Nike',
-      title: 'Air Max 90',
-      cost: '150$',
-      sizes: ['40', '41', '42'],
+      name: 'Nike Air Max 90',
+      price: 150,
+      sizes: [40, 41, 42],
     },
   ],
 }

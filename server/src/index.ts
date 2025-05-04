@@ -1,11 +1,14 @@
 import dotenv from 'dotenv'
 dotenv.config()
 
+import { Stripe } from 'stripe'
+export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!)
+
 import cookieParser from 'cookie-parser'
 import cors from 'cors'
 import express from 'express'
 import config from './config.json' with { type: 'json' }
-import articles from './routers/test.js'
+import orders from './routers/orders.js'
 
 const app = express()
 app.use(
@@ -24,7 +27,7 @@ app.use(
 app.use(express.json())
 app.use(cookieParser())
 
-app.use('/api', articles)
+app.use('/', orders)
 
 const port = config.SERVER_PORT || 8000
 app.listen(port, () => console.log(`Server listening on port ${port}`))
