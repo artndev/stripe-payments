@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import '../styles/css/home.css'
 import { useReduxDispatch, useReduxSelector } from '../hooks'
 import { addProduct, removeProduct } from '../pizzaSlices/Products'
 import { loadStripe } from '@stripe/stripe-js'
