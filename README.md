@@ -1,4 +1,4 @@
-You can find there the simple system of handling card transactions created mainly using React / Express and Stripe.
+You can find there the simple system of handling card transactions created mainly using React / Express and based on [Stripe](https://github.com/stripe/stripe-node).
 
 ## Tech Stack
 
